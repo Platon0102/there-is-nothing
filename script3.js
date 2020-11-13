@@ -1,17 +1,23 @@
 "use strict";
-console.log("arr" + "object");
-let incr = 10,
-    decr = 10;
-    // ++incr;
-    // --decr;
-    console.log(++incr);
-    console.log(--decr);
-
-    console.log (5%2);
-    console.log (2*4 == 8);
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
 
-    const isChecked = true,
-          isClose = true;
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors:{},
+    genres:[],
+    privat: false
+};
 
-          console.log(isChecked || isClose);
+const a = prompt("Один из последних просмотренных фильмов?"),
+      b = prompt("На сколько оцените его?"),
+      c = prompt("Один из последних фильмов?"),
+      d = prompt ("На сколько оцените его?");
+
+
+      personalMovieDB.movies[a] = b;
+      personalMovieDB.movies[c] = d;
+
+      console.log(personalMovieDB);
+
